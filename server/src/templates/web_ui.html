@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>ECE 140A Lab 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="web_ui50.css">
+        <script src="web_ui63.js"></script>
+    </head>
+    <body>
+        <h1>Tello Controller</h1>
+
+        <h2>Interactive mode</h2>
+        <form>
+        Magnitude? 
+        <input type="text" id="F_mag">
+        </form>
+
+
+            <div class="btn-group" role="group">
+                    <button id='Takeoff'>Take off</button>
+                    <button id="Forward">Forward</button>
+                    <button id='Land'>Land</button>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button id='Move_up'>Move_up</button>
+                <button id="Hover">Hover</button>
+                <button id='Move_Down'>Move_Down</button>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button id='Turn_left'>Turn_leftf</button>
+                <button id="Backward">Backward</button>
+                <button id='Turn_right'>Turn_right</button>
+
+
+            </div>
+
+            <h2>Flight plan mode</h2>
+            <label for="name">What's Your Plan:(Seperate the plan by ',')</label>
+            <form>
+                <textarea id='detail' name="text" cols="25" rows="10">
+                </textarea>
+                <br>
+                <input id='plan' type = 'submit' value='submit'>
+            </form>
+            <br>
+
+            <h2>Telemetry</h2>
+            <div class="grid-container" id='telemetry'>
+                <div class="grid-item">pitch
+                    <table>
+                        <td data-count='0' id='pitch'></td>
+                    </table>
+                </div>
+                <div class="grid-item">roll
+                    <table>
+                    <td data-count='0' id='roll'></td>
+                    </table>
+                </div>
+                <div class="grid-item">yaw
+                    <table>
+                    <td data-count='0' id='yaw'></td> 
+                    </table>
+                </div>  
+                <div class="grid-item">vgx
+                    <table>
+                    <td data-count='0' id='vgx'></td>
+                    </table>
+                </div>
+                <div class="grid-item">vgy
+                    <table>
+                    <td data-count='0' id='vgy'></td>
+                </table>
+                </div>
+                <div class="grid-item">vgz
+                    <table>
+                    <td data-count='0' id='vgz'></td>
+                </table>
+                </div>  
+                <div class="grid-item">templ
+                    <table>
+                    <td data-count='0' id='templ'></td>
+                </table>
+                </div>
+                <div class="grid-item">temph
+                    <table>
+                    <td data-count='0' id='temph'></td>
+                </table>
+                </div>
+                <div class="grid-item">tof
+                    <table>
+                    <td data-count='0' id='tof'></td>
+                </table>
+                </div> 
+                <div class="grid-item">h
+                    <table>
+                    <td data-count='0' id='h'></td>
+                </table>
+                </div>  
+                <div class="grid-item">bat
+                    <table>
+                    <td data-count='0' id='bat'></td>
+                </table>
+                </div>  
+                <div class="grid-item">baro
+                    <table>
+                    <td data-count='0' id='baro'></td>
+                </table>
+                </div>  
+                <div class="grid-item">time
+                    <table>
+                    <td data-count='0' id='time'></td>
+                </table>
+                </div>   
+                <div class="grid-item">agx
+                    <table>
+                    <td data-count='0' id='agx'></td>
+                </table>
+                </div>  
+                <div class="grid-item">agy
+                    <table>
+                    <td data-count='0' id='agy'></td>
+                </table>
+                </div>  
+                <div class="grid-item">agz
+                    <table>
+                    <td data-count='0' id='agz'></td>
+                </table>
+                </div>  
+              </div>
+    </body>
+</html>
